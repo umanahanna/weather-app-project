@@ -16,17 +16,21 @@
       </form>
     </header>
     <main>
-      <div class="current-weather">
+      <div class="weather-app-data">
         <div>
-          <h1 class="current-city" id="current-city">Paris</h1>
-          <p class="current-details"><span id="current-date"></span>, moderate rain <br />
-            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          <h1 class="weather-app-city" id="current-city">Paris</h1>
+          
+          <p class="weather-app-details"><span id="current-date"> </span> <span id="description">,moderate rain </span><br/>
+            <br/>
+            
+           Humidity: <strong id="humidity"></strong> , Wind: <strong id="windspeed"></strong>
+            
           </p>
         </div>
-        <div class="style-content">
-          <span class="antique">☀️</span>
-           <span class="oblique" id="current-temperature">14</span>
-           <span class="object"> °C</span></div>
+        <div class="weather-app-temperature-container">
+          <div id="icon"></div>
+           <span class="weather-app-temperature" id="current-temperature"></span>
+           <span class="weather-app-unit"> °C</span></div>
       </div>
     </main>
     <footer>

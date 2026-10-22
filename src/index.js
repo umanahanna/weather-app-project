@@ -5,8 +5,17 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = temperature;
+  temperatureElement.innerHTML = Math.round(temperature);
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = ` ${response.data.temperature.humidity}%`;
+  let windSpeedElement = document.querySelector("#windspeed");
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="antique" />`;
 }
+
 function search(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
