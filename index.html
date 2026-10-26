@@ -10,87 +10,31 @@
   <div class="weather-app">
   <body>
     <header>
-      <form id="search-form" >
-        <input class="search-input"   type="search" placeholder="Enter a city.." required autofocus  id="search-input"/>
-        <input class="submit" type="submit" value="Search" />
+      <form id="search-form" class="search-form" >
+        <input  type="search" placeholder="Enter a city.." required autofocus  class="search-form-input" id="search-form-input"/>
+        <input  type="submit" value="Search" class="search-submit-button" />
       </form>
     </header>
     <main>
       <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city" id="current-city">Paris</h1>
+          <h1 class="weather-app-city" id="city">Paris</h1>
           
-          <p class="weather-app-details"><span id="current-date"> </span> <span id="description">,   moderate rain </span><br/>
+          <p class="weather-app-details"><span id="time"> </span> <span id="description"></span>,   moderate rain </span><br/>
             
-          Humidity: <strong id="humidity"></strong>, Wind: <strong id="windspeed"></strong>            
+          Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>            
           </p>
         </div>
         <div class="weather-app-temperature-container">
-          <div id="icon"></div>
-           <span class="weather-app-temperature" id="current-temperature"></span>
-           <span class="weather-app-unit"> °C</span></div>
-      </div>
-      
-       <div class="weather-forecast" id="forecast">
-
-<div class="weather-forecast-day">
-      <div class="weather-forecast-date">Tues</div>
-      <div class="weather-forecast-icon">⛅</div>
-<div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong> </div>
+          <div id="weather-app-icon"></div>
+           <div class="weather-app-temperature" id="temperature"></div>
+           <div class="weather-app-unit">°C</div>
         </div>
       </div>
-
-<div class="weather-forecast-day">
-      <div class="weather-forecast-date">Wed</div>
-      <div class="weather-forecast-icon">⛅</div>
-<div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong> </div>
-        </div>
-</div>
-
-<div class="weather-forecast-day">
-      <div class="weather-forecast-date">Thurs</div>
-      <div class="weather-forecast-icon">⛅</div>
-<div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong> </div>
-        </div>
-</div>
-
-<div class="weather-forecast-day">
-      <div class="weather-forecast-date">Fri</div>
-      <div class="weather-forecast-icon">⛅</div>
-<div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong> </div>
-        </div>
-</div>
-<div class="weather-forecast-day">
-      <div class="weather-forecast-date">Sat</div>
-      <div class="weather-forecast-icon">⛅</div>
-<div class="weather-forecast-temperatures">
-      <div class="weather-forecast-temperature">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong> </div>
-        </div>
-</div>
-
-
-
-
-
-
-
-
-       </div>
       
+    
+      
+       <div class="weather-forecast" id="forecast"> </div> 
     </main>
     <footer>
       <p>

@@ -18,10 +18,10 @@ a {
 }
 
 header {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid #be830d;
   padding-bottom: 30px;
 }
-.search-input {
+.search-form-input {
   background-color: #f9f7fe;
   border: none;
   font-size: 16px;
@@ -30,7 +30,7 @@ header {
   border-radius: 10px;
   color: rgba(39, 33, 66, 0.4);
 }
-.submit {
+.search-submit-button {
   font-size: 16px;
   color: #fff;
   background-color: #885df1;
@@ -91,6 +91,9 @@ main {
 .weather-app-unit {
   margin-top: 6px;
   font-size: 28px;
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
 }
 
 .weather-forecast {
