@@ -58,15 +58,4 @@ currentDateElement.innerHTML = formatDate(currentDate);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
-search("New York");
-
-let forecastElement = document.querySelector("#forecast");
-forecast.innerHTML = `
-    <div class="weather-forecast-day">
-      <div class="weather-forecast-date">Tues</div>
-      <div class="weather-forecast-icon">⛅</div>
-      <div class="weather-forecast-temperatures">15°</div>
-      <div class="weather-forecast-temperature">
-        <strong>9°</strong>
-      </div>
-      </div>`;
+searchCity("New York");
