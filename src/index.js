@@ -90,6 +90,7 @@ function displayForecast(response) {
           )}º</div>
         </div>
       </div>
+    
     `;
     }
   });
